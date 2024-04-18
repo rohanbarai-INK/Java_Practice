@@ -1,17 +1,16 @@
 For Java  
 
 ARRAY -
-In order to find size of array - To find out how many elements an array has, use the length property:
+In order to find size of array - To find out how many elements an array has, use the length property;
 String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
 System.out.println(cars.length);
 // Outputs 4
-
 
 ex - for(int i=0; i < arr.length; i ++ )
 The following example outputs all elements in the cars array, using a "for-each" loop:
 String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
 for (String i : cars) {
-  System.out.println(i);
+System.out.println(i);
 }
 
 STRING - 
@@ -75,7 +74,7 @@ let fLen = fruits.length;
 
 let text = "<ul>";
 for (let i = 0; i < fLen; i++) {
-  text += "<li>" + fruits[i] + "</li>";
+text += "<li>" + fruits[i] + "</li>";
 }
 text += "</ul>";
 
@@ -87,7 +86,7 @@ fruits.forEach(myFunction);
 text += "</ul>";
 
 function myFunction(value) {
-  text += "<li>" + value + "</li>";
+text += "<li>" + value + "</li>";
 }
 
 Adding Array Elements -
