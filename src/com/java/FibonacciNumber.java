@@ -1,4 +1,4 @@
-public class FibanacciNumber {
+public class FibonacciNumber {
     public static void main(String args[]) {
        int n = 10; // Change n to calculate Fibonacci series up to a different number
         int a = 0, b = 1;
