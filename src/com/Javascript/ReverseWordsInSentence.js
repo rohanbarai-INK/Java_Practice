@@ -1,30 +1,17 @@
-function reverseWordsInSentence(sentence) {
-    let reversedSentence = '';
-    let word = '';
+function reverseEachWordAndSentence() {
+    let sentence = "My Name is Rohan Barai";
+    let words = sentence.split(" ");
+    let revWords = "";
     
-    for (let i = 0; i < sentence.length; i++) {
-        if (sentence[i] === ' ') {
-            let reversedWord = '';
-            for (let j = word.length - 1; j >= 0; j--) {
-                reversedWord += word[j];
-            }
-            reversedSentence += reversedWord + ' ';
-            word = '';
-        } else {
-            word += sentence[i];
+    for (let j = words.length - 1; j >= 0; j--) {
+        let word = words[j];
+        let revWord = "";
+        for (let i = word.length - 1; i >= 0; i--) {
+            revWord += word.charAt(i);
         }
+        revWords += revWord + " ";
     }
-    
-    let reversedWord = '';
-    for (let j = word.length - 1; j >= 0; j--) {
-        reversedWord += word[j];
-    }
-    reversedSentence += reversedWord;
-    
-    return reversedSentence;
+    console.log(revWords);
 }
 
-// Test the function with the given sentence "Rohan Barai is awesome"
-const sentence = "Rohan Barai is awesome";
-const reversedSentence = reverseWordsInSentence(sentence);
-console.log(reversedSentence); // Output: "nahoR iaraB si emosewa"
+reverseEachWordAndSentence();
