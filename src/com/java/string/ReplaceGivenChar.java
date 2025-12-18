@@ -10,5 +10,12 @@ public static void main(String[] args) {
 		System.out.print(Words+" ");
 	}
 
+	  String s1 = "My Nation is India";
+
+        // Remove both 'i' and 'I'
+        String result = s1.replaceAll("[iI]", "");
+
+        System.out.println(result);
+
 }
 }
